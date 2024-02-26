@@ -191,7 +191,13 @@ header{
     line-height: 24.2px;
     border: 3px solid var(--black);
     border-radius: 14px!important;
+    transition: all 0.2s ease-in-out ;
 }
+.services_btn:hover{
+    background-color: #a0702cb5;
+    transform: scaleX(1.1);
+}
+
 .review{
     max-width: 328px;
 }
@@ -212,6 +218,20 @@ header{
 .card{
     border-radius: 10px;
     border: 7px solid #6D6464; 
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover,
+.aside-container:hover,
+.blogs-aside-container li:hover,
+.footer-container li:hover{
+    transform:scale(1.1);
+}
+
+.aside-container,
+.blogs-aside-container li,
+.footer-container li{
+    transition: transform 0.2s ease-in-out;
+
 }
 
 .card-title{
@@ -327,10 +347,11 @@ header{
 .read-more{
     position: absolute;
     right: 0;
-
-    
+    transition: transform 0.2s ease-in-out;
 }
-
+.read-more:hover{
+    transform:scale(1.1);
+}
 .aside::after{
     content: '';
     position: absolute;
@@ -351,6 +372,10 @@ header{
     color: #fff;
     padding:10px;
     float: right;
+    transition: transform 0.2s ease-in-out;
+}
+.view-posts-btn:hover{
+    transform: scaleX(1.1);
 }
 footer{
     background: var(--black);
