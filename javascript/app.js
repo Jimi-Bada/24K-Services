@@ -1,6 +1,6 @@
 const navButton = document.getElementById("nav-button");
 const links = document.querySelectorAll('.nav-item a');
-// let screenwidth = window.innerWidth
+
 
 links.forEach(function(link){
     link.addEventListener('click',function(event){
@@ -19,3 +19,17 @@ function toggleBackgroundColor() {
     }
 }
 navButton.addEventListener('click', toggleBackgroundColor);
+// function setActiveLinks(){
+//     const currentUrl = window.location.pathname;
+//     links.forEach(link => {
+//         if(link.href === window.location.href || link.getAttribute('href') === currentUrl){
+//             link.classList.add('active');
+//         }else{
+//             link.classList.remove('active');
+//         }
+//         });
+// }
+// links.forEach(link =>{
+//     link.addEventListener('click', setActiveLinks);
+// });
+// setActiveLinks();
